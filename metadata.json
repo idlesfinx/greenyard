@@ -1,0 +1,8 @@
+
+{
+  "name": "Green Yard - Modern Resale Marketplace",
+  "description": "An ultra-modern, dark-themed landing page for a premium used goods marketplace with neon green accents and a Gemini-powered personal shopper.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
