@@ -21,15 +21,15 @@ const Hero: React.FC = () => {
           EVERY TECH DESERVES <br />
           <span className="text-[#39FF14]">A SECOND CHANCE</span>
         </h1>
-        
+
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/50 mb-10 leading-relaxed font-light">
-          Experience the most sophisticated resale platform. We verify, restore, and 
+          Experience the most sophisticated resale platform. We verify, restore, and
           reimagine pre-loved luxury and tech for a circular future.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button className="w-full sm:w-auto px-8 py-4 bg-[#39FF14] text-black font-bold rounded-2xl shadow-[0_0_30px_rgba(57,255,20,0.4)] hover:bg-[#2ecc12] transition-all transform hover:-translate-y-1">
-            Shop Collection
+            EXPLORE THE YARD
           </button>
           <button className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-2xl hover:bg-white/5 transition-all">
             List an Item
