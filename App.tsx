@@ -64,8 +64,8 @@ const App: React.FC = () => {
 
       <Footer />
 
-      {/* Floating AI Assistant */}
-      <AIAssistant />
+      {/* Floating AI Assistant (Disabled in favor of Tidio) */}
+      {/* <AIAssistant /> */}
     </div>
   );
 };
