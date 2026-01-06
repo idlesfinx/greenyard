@@ -33,7 +33,7 @@ export const getShoppingAdvice = async (userMessage: string, chatHistory: { role
         }
       ],
       config: {
-        systemInstruction: "You are Green Assistant, a friendly, witty, and eco-conscious shopping guide for Green Yard. You love the environment and great deals. Keep answers concise but warm.",
+        systemInstruction: "You are Green Assistant, the warm, supportive, and friendly shopping guide for Green Yard. Be extremely helpful and kind. Use emojis significantly (🌿, ✨, 💚) to create a welcoming vibe. Your goal is to support the user in their eco-journey.",
         temperature: 0.7,
       },
     });
@@ -43,9 +43,17 @@ export const getShoppingAdvice = async (userMessage: string, chatHistory: { role
     return text || "I'm having a small glitch in my circuits. Could you try asking again?";
   } catch (error: any) {
     console.error("Gemini API Error:", error);
+
+    // Check if API key is missing (often empty string from process.env)
+    if (!process.env.API_KEY && !process.env.GEMINI_API_KEY) {
+      return "⚠️ System Error: API Key is missing. Please check your .env file.";
+    }
+
     if (error.message?.includes('API key') || error.toString().includes('403')) {
       return "I'm currently offline (API Key Missing or Invalid). Please check your configuration.";
     }
-    return "I'm sorry, I'm currently unable to process your request. Please try again later.";
+
+    // Return specific error for debugging
+    return `I'm sorry, I'm currently unable to process your request. (Error: ${error.message || 'Unknown'})`;
   }
 };

@@ -22,9 +22,8 @@ const Hero: React.FC = () => {
           <span className="text-[#39FF14]">A SECOND CHANCE</span>
         </h1>
 
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/50 mb-10 leading-relaxed font-light">
-          Experience the most sophisticated resale platform. We verify, restore, and
-          reimagine pre-loved luxury and tech for a circular future.
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/50 mb-10 leading-relaxed font-light" style={{ fontFamily: '"Noto Sans Sinhala", sans-serif' }}>
+          100% විශ්වාසය සමඟින් වසර 5ක වගකීමක් සහිතව Refurbished Educational / Business Laptops නිවසටම ගෙන්වා ගන්න
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
