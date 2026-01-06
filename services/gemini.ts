@@ -9,7 +9,7 @@ export const getShoppingAdvice = async (userMessage: string, chatHistory: { role
     const productsContext = JSON.stringify(MOCK_PRODUCTS);
 
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-1.5-flash-latest',
       contents: [
         {
           role: 'user',
